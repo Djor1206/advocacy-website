@@ -1,0 +1,280 @@
+.container {
+	display: grid;
+	grid-template-rows: 400px, 700px, 100px ;
+	grid-template-columns: 800px, 800px ;
+}
+
+.item1 {
+	grid-row: 1 / 1;
+	grid-column: 1 / 2;
+}
+
+.item2 {
+	grid-row: 2 / 2;
+	grid-column: 1 / 1;
+	
+}
+
+.item3 {
+	grid-row: 2 / 2;
+	grid-column: 2 / 2;
+}
+
+.item4 {
+	grid-row: 3 / 3;
+	grid-column: 1 / 2;
+}
+
+@media (min-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 3;}
+  .item3 {grid-area: 2 / span 3;}
+  .item4 {grid-area: 3 / span 6;}
+}
+
+.logo {
+	font-family: Georgia, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #A7F47B;
+    padding: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav2 {
+	text-decoration: none;
+	line-height: 1.6;
+}
+
+button {
+		background-color: #B9F298;
+}
+	
+    button:hover {
+        background-color: #CCF2B6;
+}
+
+.button2 {
+	width: 10%;
+  background-color: #45c625;
+  color: white;
+  padding: 14px;
+  margin: 0 35px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.a2 {
+	color: black;
+	text-decoration: underline;
+}
+
+    .button2:hover {
+	background-color: #69d94c;
+}
+
+.Titulo {
+  color: white;
+  background-color: #000000;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Verdana, Times New Roman, sans-serif;
+}
+
+h2 {
+	padding: 15px;
+	margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+	background-color: #A7F47B;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+.Saludos {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.comparacion {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.comparacion img {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+      p, li {
+    padding: 15px;
+	margin: 20px;
+	letter-spacing: 1.6px;
+	line-height: 1.6;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+	dt, dd, caption {
+    padding: 5px;
+	margin: 20px;
+	letter-spacing: 1.6px;
+	line-height: 1.6;
+}
+	
+.Contenido {
+	width: 50%;
+	height: 350px;
+	border: 1px solid black;
+	float: right;
+	Margin: 20px;
+}
+
+.Contenido2 {
+	width: 35%;
+	height: 350px;
+	border: 1px solid black;
+	Margin: 20px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+  
+td {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #23a80a;
+  color: white;
+}
+
+form {
+	background-color: #A7F47B;
+	padding: 20px;
+}
+
+label {
+	display: block;
+	font-weight: 600;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: var(--transition);
+	width: 20%;
+}
+
+textarea {
+	width: 100%;
+    padding: 12px;
+    border: 2px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: var(--transition);
+	width: 50%;
+}
+
+
+.field-error {
+    border-color: var(--color-error) !important;
+}
+
+
+.field-success {
+    border-color: var(--color-success) !important;
+}
+
+.error-message {
+    color: var(--color-error);
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: none;
+}
+
+
+    .error-message.show {
+        display: block;
+}
+
+select[multiple] {
+    padding: 8px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 10%;
+  background-color: #45c625;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #69d94c;
+}
+
+.video {
+	margin: 15px;
+}
+
+footer {
+	background-color: #89ED50;
+}

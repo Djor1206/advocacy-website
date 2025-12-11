@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayuda</title>
+<link rel="stylesheet" href="Estilo.css">
+
+
+</head>
+
+<body>
+<script>
+const nombre = document.getElementById('nombre')
+const correo = document.getElementById('correo')
+const lugar = document.getElementById('lugar')
+const organizacion = document.getElementById('organizacion')
+const mejora = document.getElementById('mejora')
+const forma = document.getElementById('forma')
+const errorElement = document.getElementById('error')
+
+form.addEventListener('enviar', (e) => {
+	let messages = []
+	if (nombre.value === '' || nombre.value == null) {
+		messages.push('Nombre requerido')
+	}
+	
+	if (mejora.value.length > 300) {
+		messages.push('Tiene que ser menos de 300 palabras')
+	}
+	
+	if (messages length > 0) {
+		e.preventDefault()
+		errorElement.innerText = messages.join(', ')
+	}
+})
+</script>
+
+<header>
+<h1 tabindex="1" class="logo" align="center">GreenNature</h1>
+
+<nav>
+<center>
+<button>
+<a tabindex="2" href="index.html" target="_self">Inicio</a></button> |
+<button><a tabindex="3" href="sobre.html" target="_self">Sobre</a></button> |
+<button><b><a tabindex="4" href="ayuda.html" target="_self">Ayuda</a></b></button> |
+<button><a tabindex="5" href="recursos.html" target="_self">Recursos</a></button>
+</center>
+</nav>
+<br>
+<br>
+<br>
+<div class="container">
+<div class="item1">
+<center><img src="Arboles.png" alt="Arboles dentro de un bosque" width="100%" height="400"></center>
+  <div class="Titulo"><h1 tabindex="6">Ayúdanos</h1>
+  <br>
+</div>
+</div>
+
+</header>
+<main>
+<div class="item2">
+<div id="error"></div>
+<form id="forma" name="forma" align="center" method="get" action="Validacion.html">
+<label tabindex="7" for="nombre">Nombre:</label><br>
+<input tabindex="8" type="text" id="nombre" name="nombre" placeholder="Entra el nombre" aria-label="Entra el nombre" required>
+<br>
+<br>
+<label tabindex="9" for="correo">Correo Electrónico:</label><br>
+<input tabindex="10" type="email" id="correo" name="correo" placeholder="nombre@gmail.com" aria-label="nombre@gmail.com" required>
+<br>
+<br>
+<label tabindex="11" for="lugar">Lugar:</label>
+<select tabindex="12" id="lugar" name="lugar">
+        <option value="Ponce" name="lugar">Ponce</option>
+		<option value="Fajardo" name="lugar">Fajardo</option>
+		<option value="San Juan" name="lugar">San Juan</option>
+		</select>
+<br>
+<br>
+<label tabindex="13">¿Perteneces a alguna organización?</label><br>
+<input id="organizacion" tabindex="13" type="radio" name="organizacion" value="0">Si
+<input type="radio" name="organizacion" value="0">No
+<br>
+<br>
+<label tabindex="14" for="Mejora">¿Como podemos mejorar?</label><br>
+<textarea id="mejora" tabindex="15" name="mejora" cols="24" rows="2" id="Mejora" placeholder="Mensaje..." aria-label="Mensaje..."></textarea>
+<br>
+<br>
+<Input tabindex="15" id="enviar" type="submit" name="enviar" value="Enviar" aria-label="Enviar">
+<input tabindex="16" type="reset" name="borrar" value="Borrar" aria-label="Borrar">
+</form>
+
+</div>
+</main>
+<footer tabindex="17">
+<div class="item4">
+<br>
+<br>
+<center>Contactanos<br>
+DORT7954@interponce.edu<br>
+© 2025 GreenNature.</center>
+<br>
+<br>
+</footer>
+</div>
+</div>
+</body>
+
+</html>
