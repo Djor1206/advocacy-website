@@ -1,0 +1,17 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de Git
+*.lnk
+.git/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (si usas Node.js)
+node_modules/
